@@ -1,0 +1,21 @@
+{
+  "name": "gulp-tailwind-alpine-nunjucks-starter",
+  "version": "1.0.0",
+  "description": "Boilerplate HTML starter for your projects.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.28.3",
+    "cssnano": "^5.1.15",
+    "gulp": "^4.0.2",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-postcss": "^9.0.1",
+    "tailwindcss": "^3.2.7"
+  }
+}

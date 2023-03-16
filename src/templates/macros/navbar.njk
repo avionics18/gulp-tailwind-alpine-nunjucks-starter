@@ -1,0 +1,15 @@
+{% macro activateMenu(currentMenu="home") %}
+<nav class="bg-gray-900 border-b-4 border-b-rose-600 shadow-md">
+	<div class="container px-8 2xl:px-36 mx-auto flex items-center">
+		<div class="brand-logo">
+			<h1 class="text-2xl font-bold text-white">ACME</h1>
+		</div>
+		<div class="navbar ml-auto flex items-center">
+			<a class="block p-6 text-white hover:bg-gray-700 {% if currentMenu=="home" %}bg-gray-700{% endif %}" href="/">Home</a>
+			<a class="block p-6 text-white hover:bg-gray-700 {% if currentMenu=="services" %}bg-gray-700{% endif %}" href="/services.html">Services</a>
+			<a class="block p-6 text-white hover:bg-gray-700 {% if currentMenu=="about" %}bg-gray-700{% endif %}" href="/about.html">About</a>
+			<a class="block p-6 text-white hover:bg-gray-700 {% if currentMenu=="contact" %}bg-gray-700{% endif %}" href="/contact.html">Contact</a>
+		</div>
+	</div>
+</nav>
+{% endmacro %}

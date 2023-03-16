@@ -1,0 +1,9 @@
+{% macro title(titleTxt = '') %}
+  <title>
+  	{%- if titleTxt == '' %}
+  		ACME
+		{%- else -%}
+			{{ titleTxt | title }} | ACME
+		{%- endif -%}
+  </title>
+{% endmacro %}
