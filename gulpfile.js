@@ -21,7 +21,7 @@ function njkTask() {
       nunjucksRender({
         path: ['./src/templates'],
         data: {
-          tailwindcss_path: 'static/css/style.css',
+          globalTitle: 'acme',
         },
       })
     )
