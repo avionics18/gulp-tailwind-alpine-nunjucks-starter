@@ -4,6 +4,12 @@
 
 {% set page_name = 'home' %}
 
+{% set hero = {
+    title: "Where There Is A Will, There Is A Way",
+    desc: "Welcome! to the website SELF STUDY 101 - where we try to learn each & every concept in detail. We believe knowledge should be free and accessible to everyone. It's the merit of the student which should decide their fate, and nothing else should come in between."
+  } 
+%}
+
 {% set features = [
     {
       title: 'Lightning Fast', 
@@ -40,9 +46,9 @@
   <section class="hero bg-hero bg-no-repeat bg-center bg-cover">
     <div class="container px-8 2xl:px-36 mx-auto flex flex-col justify-center items-center h-[550px]">
       <h2 class="text-5xl font-bold font-serif capitalize mb-6">
-        <span class="bg-gray-100 text-gray-900">Affordable Professional Web Design</span>
+        <span class="bg-gray-100 text-gray-900">{{ hero.title }}</span>
       </h2>
-      <p class="w-4/5 text-center text-2xl font-light text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by randomised words which don't look even slightly believable.</p>
+      <p class="w-4/5 text-center text-2xl font-light text-white">{{ hero.desc }}</p>
     </div>  
   </section>
   {# .hero #}

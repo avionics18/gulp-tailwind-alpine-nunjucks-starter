@@ -28,7 +28,7 @@ const manageEnvironment = function(environment) {
   environment.addGlobal('baseURL', baseURL);
 
   // Brand Name
-  environment.addGlobal('brandTitle', 'acme');
+  environment.addGlobal('brandTitle', 'self study 101');
 }
 
 function njkTask() {
