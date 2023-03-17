@@ -27,6 +27,10 @@
   {{ title(page_name) }}
 {% endblock %}
 
+{% block loading_animation %}
+  {% include "partials/pageTransition.njk" %}
+{% endblock %}
+
 {% block navigation %}
   {% from "macros/navbar.njk" import activateMenu %}
   {{ activateMenu(page_name) }}

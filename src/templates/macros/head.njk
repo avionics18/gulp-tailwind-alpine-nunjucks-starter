@@ -1,9 +1,9 @@
-{% macro title(titleTxt = '') %}
+{%- macro title(titleTxt = '') -%}
   <title>
-  	{%- if titleTxt == '' %}
-  		ACME
+  	{%- if titleTxt == '' -%}
+  		{{ brandTitle | upper }}
 		{%- else -%}
-			{{ titleTxt | title }} | ACME
+			{{ titleTxt | title }} | {{ brandTitle | upper }}
 		{%- endif -%}
   </title>
-{% endmacro %}
+{%- endmacro -%}
