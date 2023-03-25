@@ -53,6 +53,9 @@ function bsServe(done) {
   browserSync.init({
     server: {
       baseDir: './docs',
+      serveStaticOptions: {
+        extensions: ['html']
+      }
     },
     notify: false,
   });
