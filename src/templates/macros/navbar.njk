@@ -29,7 +29,7 @@
 		</div>
 		<div class="navbar ml-auto flex items-center">
 			{% for nav in navItems %}
-				<a class="block p-6 text-white {% if currentMenu == nav.title %}bg-gray-700{% else %}hover:bg-gray-800{% endif %}" href="{% if baseURL == 'http://localhost:3000' %}{{ nav.url }}{% else %}{{ [baseURL, nav.url] | join }}{% endif %}">{{ nav.title | title }}</a>
+				<a class="block p-6 text-white {% if currentMenu == nav.title %}bg-gray-700{% else %}hover:bg-gray-800{% endif %}" href="{{ [baseURL, nav.url] | join }}">{{ nav.title | title }}</a>
 			{% endfor %}
 		</div>
 	</div>
